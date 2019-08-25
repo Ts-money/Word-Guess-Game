@@ -1,0 +1,56 @@
+body {
+    background: url('../images/background.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+
+.container {
+    background-color:burlywood;
+    width:69%;
+    height:250%;
+    margin: 5% auto;
+    padding: 3%;
+    font-family:unset;
+    position: relative;
+    font-size: 169%;
+    line-height: 17%;
+}
+#text {
+    margin: 1%;
+    padding: 2%;
+    position: relative;
+    line-height: 75%;
+}
+
+@font-face {
+    font-family: 'blessings';
+    src: url('Blessings\ of\ Babylon.otf');
+}
+.display-1 {
+    font-family: 'blessings';
+    color: black;
+    font-size: 650%;
+    position: relative;
+    margin-top: 10px;
+}
+
+@media(max-width: 692px){
+    .container{
+        width: 80%;
+    }
+    h1{
+        font-size: 1.5rem;
+        left: -8%;
+    }
+}
+
+    @media(max-width: 548px){
+        .container{
+            width: 80%;
+        }
+        h1{
+            font-size: 1.2rem;
+            left: -12%;
+        }
+    }

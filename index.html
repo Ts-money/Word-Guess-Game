@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Word-Guess-Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<script src="assets/javascript/game.js"></script>
+
+<body>
+    <h1 class="display-1">HANGMAN</h1>
+
+    <div class="container">
+        <img src="assets/images/hangman-1.jpg" id="image" alt="image" width=auto height="185">
+        <div id="text">
+            <p>Guess the word and avoid getting HANGED.</p>
+            <b>Press any key to begin.
+            </b>
+        </div>
+
+        <p> Guessed letters:
+            <span id="letters"></span>
+        </p>
+
+        <p>Current Guess:
+            <span id="guess"></span>
+        </p>
+
+        <p>Number of guesses remaining:
+            <span id="guesses">10</span>
+        </p>
+
+        <p> Total Winnings!!:
+            <span id="wins">0</span>
+        </p>
+
+    </div>
+
+    <script type="text/javascript">
+        startGame();
+        document.onkeypress = function (event) {
+            var letter = event.key;
+            guessLetter(letter);
+        }
+    </script>
+
+</body>
+
+</html>
