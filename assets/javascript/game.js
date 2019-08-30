@@ -69,7 +69,7 @@ function guessLetter(letter) {
         if (word === "GOODBYES") {
             var audio = new Audio("assets/javascript/Goodbyes.wav");
             var promise = audio.play();
-            console.log('Starting music')
+            console.log('Starting music');
             setInterval(function () { pauseMusic(audio, promise); }, 15000);
         }
         document.getElementById("image").src = "assets/images/" + word + ".jpg";
